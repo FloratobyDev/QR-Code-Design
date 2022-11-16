@@ -31,7 +31,8 @@ I initially started by reading the [`README.md`](./README.md) first to get a bet
 
 After reading the instructions, I started with structuring my **HTML** to get a better look at how I should style it later.   
 It may not be the final structure but building a foundation for it has always been a good approach for me, especially when it's time to work on the styling. Styling the page took a bit of time for me as I'm not fully familiar with some of the properties I had to use. It was pretty straightforward until I had to work on the image part. I didn't know whether I should just use the *background property* or create an *img element* inside a div. So I tried both. I struggled trying to get it to look right when I tried using the *background property* and I couldn't get it right. The image is zoomed in like so: 
-[](./images/screenshot_zoomed.PNG)
+
+![](./images/screenshot_zoomed.PNG)
 
 So after feeling frustrated, I switched to the *img element* idea. 
 
