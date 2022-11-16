@@ -5,7 +5,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -19,35 +18,30 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ## Overview
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+A QR code component designed with HTML and CSS.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/FloratobyDev/QR-Code-Design)
+- Live Site URL: [Add live site URL here](https://teal-raindrop-91e2ea.netlify.app/)
 
 ## My process
+
+I initially started by reading the [`README.md`](./README.md) first to get a better understanding of the problem. As I've learned through the years, reading the instructions carefully has always been a good idea. Missing that one point can cost a lot of time and energy.
+
+After reading the instructions, I started with structuring my **HTML** to get a better look at how I should style it later.   
+It may not be the final structure but building a foundation for it has always been a good approach for me, especially when it's time to work on the styling. Styling the page took a bit of time for me as I'm not fully familiar with some of the properties I had to use. It was pretty straightforward until I had to work on the image part. I didn't know whether I should just use the *background property* or create an *img element* inside a div. So I tried both. I struggled trying to get it to look right when I tried using the *background property* and I couldn't get it right. The image is zoomed in like so: 
+[](./images/screenshot_zoomed.PNG)
+
+So after feeling frustrated, I switched to the *img element* idea. 
+
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Desktop-first workflow
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
