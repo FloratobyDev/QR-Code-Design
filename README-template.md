@@ -27,14 +27,33 @@ A QR code component designed with HTML and CSS.
 
 ## My process
 
-I initially started by reading the [`README.md`](./README.md) first to get a better understanding of the problem. As I've learned through the years, reading the instructions carefully has always been a good idea. Missing that one point can cost a lot of time and energy.
+**PROCESS**
+
+I initially started by reading the `README.md` of the starting project first to get a better understanding of the problem. As I've learned through the years, reading the instructions carefully has always been a good idea. Missing a point can cost more time and energy.
 
 After reading the instructions, I started with structuring my **HTML** to get a better look at how I should style it later.   
 It may not be the final structure but building a foundation for it has always been a good approach for me, especially when it's time to work on the styling. Styling the page took a bit of time for me as I'm not fully familiar with some of the properties I had to use. It was pretty straightforward until I had to work on the image part. I didn't know whether I should just use the *background property* or create an *img element* inside a div. So I tried both. I struggled trying to get it to look right when I tried using the *background property* and I couldn't get it right. The image is zoomed in like so: 
 
 ![](./images/screenshot_zoomed.PNG)
 
-So after feeling frustrated, I switched to the *img element* idea. 
+So after feeling frustrated, I switched to the *img element* idea. I had one problem with it and that is this: 
+
+![](./images/screenshot_clip.PNG)
+
+The bottom side of the image was not set properly. I tried adding **height: 200px** and that seemed to have fixed it but now the problem is that it's too small. So I increased the height a bit and more problems occurred. So I was pretty frustrated at this point and began debugging. In the end, I was able to figure out that the img needs to be centered as well. My thought was that, the image was already centered. So after figuring out what was causing the problem, I was able to fixed it. The solution was to simply add the following code : 
+
+ ```css
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+```
+It worked! After that, everything was pretty much set and is ready to be submitted. It was a good experience for sure.
+
+**REFLECTION**
+
+I've been using [**SASS**](https://sass-lang.com/) for a few weeks now, and I forgot what it felt like to style a website with just Pure CSS. It's a good feeling to get back on to it from time to time. However, SASS is just a great CSS pre-compiler extension, so I'm probably going to keep styling my web projects with it. 
 
 
 ### Built with
@@ -44,55 +63,10 @@ So after feeling frustrated, I switched to the *img element* idea.
 - Flexbox
 - Desktop-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
-### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
+- [background property](https://www.w3schools.com/css/css_background.asp) - Great when I'm trying to brush up on my CSS knowledge.
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Michael Mushrush](https://michaelmushrush.tech/)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

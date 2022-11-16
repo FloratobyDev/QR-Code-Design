@@ -41,18 +41,24 @@ body {
     transform: translate(-50%, -50%);
 
     /* SCALING */
-
     width: 20vw;
+    height: auto;
+
 }
 
 
 .image-container {
     border-radius: 15px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 15px;
     overflow: hidden;
+    width: auto;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
 }
 
 h1 {
